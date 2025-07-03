@@ -1,0 +1,20 @@
+#inputting a 2D list (Matrix)
+
+rows=int(input("Number of Rows: "))
+cols=int(input("Number of Columns: "))
+
+matrix=[]
+
+for i in range(rows):
+    row=[]
+    print(f".....ROW {i+1}.....")
+    for j in range(cols):
+        col=int(input(f"Enter the Data in [{i+1}][{j+1}] = "))
+        row.append(col)
+    matrix.append(row)
+
+print(f"The Matrix ({rows}x{cols}) is: ")
+for Rows in matrix:
+    for Cols in Rows:
+        print(Cols,end=" ")
+    print()
